@@ -1,0 +1,23 @@
+{
+  "name": "build_tool_showcase",
+  "version": "1.0.0",
+  "description": "A simple web app built with TypeScript and configured with standard industry build tools.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larryking01/Build_Tool_Showcase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larryking01/Build_Tool_Showcase/issues"
+  },
+  "homepage": "https://github.com/larryking01/Build_Tool_Showcase#readme",
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
