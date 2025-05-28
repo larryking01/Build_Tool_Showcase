@@ -1,1 +1,1 @@
-console.log("hey there");
+(()=>{"use strict";let e=document.querySelector("button");e&&(e.style.backgroundColor="red")})();
