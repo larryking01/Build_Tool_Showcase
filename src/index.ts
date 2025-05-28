@@ -6,5 +6,5 @@ import './styles/main.scss';
 const button = document.querySelector('button');
 
 if (button) {
-  button.style.backgroundColor = 'red';
+  button.style.backgroundColor = 'orange';
 }

@@ -1,0 +1,1 @@
+(()=>{"use strict";var e=document.querySelector("button");e&&(e.style.backgroundColor="orange")})();

@@ -7,21 +7,35 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
-        // clean: true // optional, clears dist before rebuild
+        clean: true // optional, clears dist before rebuild
     },
     module: {
         rules: [
             { 
                 test: /\.ts$/, 
-                use: 'ts-loader'
+                use: [
+                    { loader: 'babel-loader' },
+                    { loader: 'ts-loader' } 
+                    // loaders are executed from bottom-top so ts-loader runs first
+                    //  compile TS to JS, then babel-loader transpiles 
+                    // that JS to be browser-compatible.
+                ],
+                exclude: /node_modules/,
              },
              {
                 test: /\.scss$/, // handles scss files
                 use: [
                     'style-loader', // inject styles into dom
-                    'css-loader', // turns css into js
-                    'sass-loader', // compiles sass to css
-                ]
+                    {
+                        loader: 'css-loader', // turns css into js
+                        options: { sourceMap: true }
+                    },
+                    {
+                        loader: 'sass-loader', // compiles sass to css
+                        options: { sourceMap: true }
+                    }
+                ],
+                exclude: /node_modules/,
              }
         ]
     },
@@ -38,6 +52,7 @@ module.exports = {
         template: './public/index.html',
         }),
     ],
+    devtool: 'source-map'
 
 
 }

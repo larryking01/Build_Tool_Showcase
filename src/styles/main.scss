@@ -1,6 +1,13 @@
 // Variables
 $primary-color: #4a90e2;
+$secondary-color: '#fefefe';
+
+@mixin center_align {
+  display: grid;
+  place-items: center;
+}
 
 #app {
   background-color: $primary-color;
+  @include center_align;
 }
