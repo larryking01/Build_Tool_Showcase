@@ -4,8 +4,6 @@
   "description": "A simple web app built with TypeScript and configured with standard industry build tools.",
   "scripts": {
     "test": "jest",
-    "_build": "webpack --mode production",
-    "_dev": "webpack serve --mode development",
     "dev": "webpack serve --config webpack.config.js --mode development",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint src --ext .ts",

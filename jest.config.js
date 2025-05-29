@@ -1,6 +1,6 @@
 module.exports = {
-  preset: 'ts-jest', // Use ts-jest to handle TS files
-  testEnvironment: 'jsdom', // For DOM-related testing
+  preset: 'ts-jest', 
+  testEnvironment: 'jsdom', 
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
     '^.+\\.(js|jsx)$': 'babel-jest',
@@ -12,5 +12,5 @@ module.exports = {
 
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
-  testMatch: ['**/__tests__/**/*.test.ts'], // You can customize this
+  testMatch: ['**/__tests__/**/*.test.ts'], 
 };
