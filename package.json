@@ -20,7 +20,7 @@
   "lint-staged": {
     "src/**/*.{ts}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint"
     ],
     "src/**/*.{scss,html}": [
       "prettier --write"

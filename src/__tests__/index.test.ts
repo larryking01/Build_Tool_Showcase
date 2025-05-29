@@ -3,7 +3,7 @@
  */
 
 import { displayBuildTools, toggleTheme } from '../index';
-import tools from '../../data/tools.json';
+// import tools from '../../data/tools.json';   // caused a linting error
 
 jest.mock('../../data/tools.json', () => [
   { name: 'Webpack', what: 'A module bundler' },
@@ -12,7 +12,6 @@ jest.mock('../../data/tools.json', () => [
 
 describe('display build tools', () => {
   beforeEach(() => {
-    // Reset the DOM
     document.body.innerHTML = `
       <div class="tool-display"></div>
     `;
@@ -36,7 +35,6 @@ describe('display build tools', () => {
 
 describe('toggleTheme', () => {
   beforeEach(() => {
-    // Reset the DOM
     document.body.innerHTML = '<button class="toggle-btn">Toggle</button>';
     document.body.classList.add('light');
   });

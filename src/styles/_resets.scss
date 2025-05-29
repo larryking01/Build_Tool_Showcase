@@ -18,6 +18,9 @@ body.light {
   background-color: $light-theme-bg;
   transition: background-color 0.3s ease;
   --tool-item-bg: #e5e4e2;
+  --footer-section-bg: #a0a0a0;
+  --footer-item: $dark-theme-bg;
+  --copyright-text: $dark-theme-bg;
 }
 
 body.dark {
@@ -27,4 +30,7 @@ body.dark {
   --detail-text-color: #f0f0f0;
   --tool-item-bg: #a9a9a9;
   --tool-description-col: black;
+  --footer-section-bg: black;
+  --footer-item: #f0f0f0;
+  --copyright-text: #f0f0f0;
 }

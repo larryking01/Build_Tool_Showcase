@@ -8,6 +8,8 @@ interface BuildTool {
 
 function displayBuildTools() {
   const toolDisplayDiv = document.querySelector('.tool-display');
+  // console.log( toolDisplayDiv );  //caused a linting error
+
   if (!toolDisplayDiv) return;
 
   toolDisplayDiv.innerHTML = '';
@@ -21,6 +23,7 @@ function displayBuildTools() {
   });
 }
 
+// let darkStatus;  // caused a linting error
 function toggleTheme() {
   const body = document.body;
   const toggleButton = document.querySelector('.toggle-btn');
@@ -32,8 +35,10 @@ function toggleTheme() {
 
     if (isLightTheme) {
       body.classList.replace('light', 'dark');
+      toggleButton.textContent = 'Light Theme';
     } else {
       body.classList.replace('dark', 'light');
+      toggleButton.textContent = 'Dark Theme';
     }
   });
 }
