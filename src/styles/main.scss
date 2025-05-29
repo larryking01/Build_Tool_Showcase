@@ -49,6 +49,20 @@
     font-size: 1.3rem;
     font-style: italic;
   }
+
+  .toggle-btn {
+    background-color: $toggle-btn-primary;
+    color: #f0f0f0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $dark-theme-bg;
+    }
+  }
 }
 
 .container {
@@ -63,11 +77,13 @@
     font-style: italic;
     margin-bottom: 0.2rem;
     color: var(--curious-text-color);
+    font-weight: bold;
   }
 
   .detail-text {
     font-size: 1.1rem;
     color: var(--detail-text-color);
+    margin-bottom: 2rem;
   }
 
   .tool-display {
@@ -86,10 +102,15 @@
     .tool-name {
       margin-bottom: 2rem;
       color: color.adjust($primary-color, $lightness: -40%);
+      font-size: 1.3rem;
+      font-family: monospace;
     }
 
     .tool-description {
       color: var(--tool-description-col);
+      font-size: 1rem;
+      line-height: 1.563rem;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     @include toolsDisplayResponsiveness;
@@ -97,7 +118,7 @@
 }
 
 .footer-section {
-  background-color: $light-purple;
+  background-color: var(--footer-section-bg);
   width: 100%;
   padding: 1rem 4rem;
   margin: 0;
@@ -108,8 +129,9 @@
     margin: 0 auto;
 
     .copyright-text {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       margin-bottom: 1.5rem;
+      color: var(--copyright-text);
     }
 
     .footer-items {
@@ -120,6 +142,8 @@
     .footer-item {
       cursor: pointer;
       font-size: 1.1rem;
+      color: var(--footer-item);
+      font-size: 1rem;
     }
   }
 }

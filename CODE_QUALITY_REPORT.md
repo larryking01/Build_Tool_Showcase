@@ -7,7 +7,7 @@
 
 * A 4th error was also because of an unused import for 'tools' inside src/__tests__/index.test.ts
 
-* Finally, the remaining 50 linting issues looked like this: "error Delete `cs`     prettier/prettier
+* Finally, the remaining 50 linting issues looked like this: "error Delete `cr`     prettier/prettier
 * which is caused by Windows-style line endings (CRLF) in a file where Prettier 
 * expects Unix-style line endings (LF).
 
