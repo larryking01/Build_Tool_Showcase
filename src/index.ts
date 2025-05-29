@@ -6,6 +6,8 @@ interface BuildTool {
   what: string;
 }
 
+let darkStatus;
+
 function displayBuildTools() {
   const toolDisplayDiv = document.querySelector('.tool-display');
   if (!toolDisplayDiv) return;
