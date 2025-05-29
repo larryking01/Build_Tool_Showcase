@@ -13,4 +13,9 @@ module.exports = {
   },
   moduleFileExtensions: ['ts', 'tsx', 'js'],
   testMatch: ['**/__tests__/**/*.test.ts'], 
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.{ts,tsx,js,jsx}'],
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'lcov', 'html'],
+
 };
