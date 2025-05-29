@@ -42,3 +42,5 @@ document.addEventListener('DOMContentLoaded', function () {
   displayBuildTools();
   toggleTheme();
 });
+
+export { displayBuildTools, toggleTheme };
