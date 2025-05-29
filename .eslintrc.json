@@ -3,7 +3,7 @@
   "extends": [
     "eslint:recommended", 
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"  // 👈 This adds Prettier support
+    "plugin:prettier/recommended"  // This adds Prettier support
     ],
   "plugins": ["@typescript-eslint"],
   "env": {

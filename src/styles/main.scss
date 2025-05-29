@@ -1,13 +1,123 @@
-// Variables
-$primary-color: #4a90e2;
-$secondary-color: '#fefefe';
+@use 'sass:color';
+@use './resets' as *;
+@use './variables' as *;
 
-@mixin center_align {
-  display: grid;
-  place-items: center;
+@mixin toolsDisplayResponsiveness {
+  @media (max-width: 700px) {
+    display: block;
+
+    .tool-item {
+      margin-bottom: 1.5rem;
+      height: 12rem;
+    }
+
+    .tool-item:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
-#app {
+/* header styling */
+.header-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
   background-color: $primary-color;
-  @include center_align;
+  height: 5rem;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  .title-and-logo {
+    display: flex;
+    gap: 0.5rem;
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .theme-toggle {
+    align-self: center;
+    cursor: pointer;
+  }
+
+  .header-title {
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+}
+
+.container {
+  // background-color: green;
+  width: 100%;
+  padding: 3rem;
+  margin: 2rem auto;
+}
+
+.tools-display-section {
+  .curious-text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 0.2rem;
+  }
+
+  .detail-text {
+    font-size: 1.1rem;
+  }
+
+  .tool-display {
+    margin-top: 1rem;
+    // background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
+    gap: 2rem;
+
+    .tool-item {
+      padding: 1rem;
+      border-radius: 0.625rem;
+      background-color: #e5e4e2;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .tool-name {
+      margin-bottom: 2rem;
+      color: color.adjust($primary-color, $lightness: -40%);
+    }
+
+    @include toolsDisplayResponsiveness;
+  }
+}
+
+.footer-section {
+  background-color: $light-purple;
+  // padding: 1rem;
+  // margin: 2rem auto 0 auto;
+  width: 100%;
+  padding: 1rem 4rem;
+  margin: 0;
+
+  .footer {
+    height: 10rem;
+    width: 100%;
+    margin: 0 auto;
+
+    .copyright-text {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-items {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-item {
+      cursor: pointer;
+      font-size: 1.1rem;
+    }
+  }
 }

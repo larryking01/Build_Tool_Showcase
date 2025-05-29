@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Webpack",
+    "what": "A module bundler that compiles and bundles JavaScript, TypeScript, and styles for the browser."
+  },
+  {
+    "name": "TypeScript",
+    "what": "A statically typed superset of JavaScript that compiles to plain JavaScript."
+  },
+  {
+    "name": "ts-loader",
+    "what": "A Webpack loader that uses the TypeScript compiler to transpile `.ts` files."
+  },
+  {
+    "name": "babel-loader",
+    "what": "A Webpack loader that uses Babel to transpile modern JavaScript to be compatible with older browsers."
+  },
+  {
+    "name": "Babel",
+    "what": "A JavaScript compiler that lets you use next-gen JavaScript features by transpiling code to backwards-compatible JavaScript."
+  },
+  {
+    "name": "sass-loader",
+    "what": "A Webpack loader that compiles Sass/SCSS files to CSS."
+  },
+  {
+    "name": "css-loader",
+    "what": "Turns CSS into CommonJS modules so it can be bundled by Webpack."
+  },
+  {
+    "name": "style-loader",
+    "what": "Injects CSS into the DOM via `<style>` tags."
+  },
+  {
+    "name": "ESLint",
+    "what": "A tool for identifying and fixing problems in your JavaScript and TypeScript code."
+  },
+  {
+    "name": "@typescript-eslint/parser",
+    "what": "An ESLint parser that allows ESLint to lint TypeScript code."
+  },
+  {
+    "name": "@typescript-eslint/eslint-plugin",
+    "what": "A plugin that provides a set of TypeScript-specific linting rules for ESLint."
+  },
+  {
+    "name": "Prettier",
+    "what": "An opinionated code formatter that enforces consistent code style."
+  },
+  {
+    "name": "Husky",
+    "what": "A tool that lets you run scripts at Git hooks like `pre-commit` to enforce checks before code is committed."
+  },
+  {
+    "name": "lint-staged",
+    "what": "Runs linters (like ESLint or Prettier) only on files that are staged for commit."
+  },
+  {
+    "name": "HtmlWebpackPlugin",
+    "what": "Simplifies creation of HTML files to include Webpack bundles automatically."
+  },
+  {
+    "name": "webpack-dev-server",
+    "what": "A development server that provides live reloading and a local dev environment."
+  }
+]
