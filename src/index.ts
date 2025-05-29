@@ -21,6 +21,24 @@ function displayBuildTools() {
   });
 }
 
+function toggleTheme() {
+  const body = document.body;
+  const toggleButton = document.querySelector('.toggle-btn');
+
+  if (!toggleButton) return;
+
+  toggleButton.addEventListener('click', function () {
+    const isLightTheme = document.body.classList.contains('light');
+
+    if (isLightTheme) {
+      body.classList.replace('light', 'dark');
+    } else {
+      body.classList.replace('dark', 'light');
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   displayBuildTools();
+  toggleTheme();
 });

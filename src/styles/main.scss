@@ -63,10 +63,12 @@
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 0.2rem;
+    color: var(--curious-text-color);
   }
 
   .detail-text {
     font-size: 1.1rem;
+    color: var(--detail-text-color);
   }
 
   .tool-display {
@@ -79,13 +81,17 @@
     .tool-item {
       padding: 1rem;
       border-radius: 0.625rem;
-      background-color: #e5e4e2;
+      background-color: var(--tool-item-bg);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     .tool-name {
       margin-bottom: 2rem;
       color: color.adjust($primary-color, $lightness: -40%);
+    }
+
+    .tool-description {
+      color: var(--tool-description-col);
     }
 
     @include toolsDisplayResponsiveness;

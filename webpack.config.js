@@ -5,8 +5,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 module.exports = {
     entry: './src/index.ts',
     output: {
+        filename: 'index.[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
         clean: true // optional, clears dist before rebuild
     },
     module: {
@@ -61,6 +61,4 @@ module.exports = {
         }),
     ],
     devtool: 'source-map'
-
-
 }
