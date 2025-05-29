@@ -1,0 +1,19 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended", 
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"  // This adds Prettier support
+    ],
+  "plugins": ["@typescript-eslint"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "rules": {
+    "semi": ["error", "always"],             //  Custom rule 1
+    "quotes": ["error", "single"],           //  Custom rule 2
+    "prettier/prettier": "error", // Makes formatting issues show as errors
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}
