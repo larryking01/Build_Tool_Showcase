@@ -3,7 +3,7 @@
  */
 
 import { displayBuildTools, toggleTheme } from '../index';
-import tools from '../../data/tools.json';
+// import tools from '../../data/tools.json';   // caused a linting error
 
 jest.mock('../../data/tools.json', () => [
   { name: 'Webpack', what: 'A module bundler' },

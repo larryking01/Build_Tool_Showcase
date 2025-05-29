@@ -6,10 +6,10 @@ interface BuildTool {
   what: string;
 }
 
-let darkStatus;
-
 function displayBuildTools() {
   const toolDisplayDiv = document.querySelector('.tool-display');
+  // console.log( toolDisplayDiv );  //caused a linting error
+
   if (!toolDisplayDiv) return;
 
   toolDisplayDiv.innerHTML = '';
@@ -23,6 +23,7 @@ function displayBuildTools() {
   });
 }
 
+// let darkStatus;  // caused a linting error
 function toggleTheme() {
   const body = document.body;
   const toggleButton = document.querySelector('.toggle-btn');
