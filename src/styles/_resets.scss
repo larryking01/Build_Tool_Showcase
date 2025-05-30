@@ -21,6 +21,8 @@ body.light {
   --footer-section-bg: #a0a0a0;
   --footer-item: $dark-theme-bg;
   --copyright-text: $dark-theme-bg;
+  --tool-name-color: #8e33ff;
+  --header-bg-color: #8e33ff;
 }
 
 body.dark {
@@ -28,9 +30,12 @@ body.dark {
   transition: background-color 0.3s ease;
   --curious-text-color: #f0f0f0;
   --detail-text-color: #f0f0f0;
-  --tool-item-bg: #a9a9a9;
-  --tool-description-col: black;
+  --tool-item-bg: #111111;
+  --tool-description-col: #f0f0f0;
   --footer-section-bg: black;
   --footer-item: #f0f0f0;
   --copyright-text: #f0f0f0;
+  --tool-name-color: #008080;
+  --header-bg-color: #008080;
+  --tool-item-border: 1px solid #f0f0f0;
 }
