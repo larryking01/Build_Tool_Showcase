@@ -1,7 +1,7 @@
 # Build_Tool_Showcase
 A simple and educational web application that displays frontend build tools, built with **TypeScript**, **Sass**, and powered by modern tooling like **Webpack**, **Jest**, **ESLint**, and **Prettier**.
 
----
+-------
 
 # Project Overview
 This project demonstrates how to:
