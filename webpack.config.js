@@ -7,7 +7,7 @@ module.exports = {
     output: {
         filename: 'index.[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
-        clean: true // optional, clears dist before rebuild
+        clean: true 
     },
     module: {
         rules: [
@@ -23,31 +23,24 @@ module.exports = {
                 exclude: /node_modules/,
              },
              {
-                test: /\.scss$/, // handles scss files
+                test: /\.scss$/, 
                 use: [
-                    'style-loader', // inject styles into dom
+                    'style-loader', 
                     {
-                        loader: 'css-loader', // turns css into js
+                        loader: 'css-loader', 
                         options: { sourceMap: true }
                     },
                     {
-                        loader: 'sass-loader', // compiles sass to css
+                        loader: 'sass-loader', 
                         options: { sourceMap: true }
                     }
                 ],
                 exclude: /node_modules/,
              },
-            //  {
-            //     test: /\.(png|jpe?g|gif|svg)$/i,
-            //     type: 'asset/resource',
-            //     generator: {
-            //         filename: 'images/[name][ext]', // optional: controls output path
-            //     },
-            // }
 
         ]
     },
-    devServer: { // webpack local development setup
+    devServer: { 
         static: './dist',
         open: true, 
         port: 3000
@@ -55,7 +48,7 @@ module.exports = {
     resolve: {
         extensions: ['.ts', '.js'],
     },
-    plugins: [ // set up html and point webpack to its location
+    plugins: [
         new HtmlWebpackPlugin({
         template: './public/index.html',
         }),

@@ -25,7 +25,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, // Extracts CSS to separate file
+          MiniCssExtractPlugin.loader, 
           {
             loader: 'css-loader',
             options: { sourceMap: false },
@@ -57,11 +57,11 @@ module.exports = {
   ],
   optimization: {
     minimizer: [
-      new TerserPlugin(),           // Minify JS
-      new CssMinimizerPlugin(),     // Minify CSS
+      new TerserPlugin(),           
+      new CssMinimizerPlugin(),     
     ],
     splitChunks: {
-      chunks: 'all',                // Vendor/code splitting
+      chunks: 'all',      
     },
   },
 };
