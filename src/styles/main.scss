@@ -27,7 +27,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  background-color: $primary-color;
+  background-color: var(--header-bg-color);
   height: 5rem;
   padding: 0.5rem 2rem;
   width: 100%;
@@ -75,7 +75,7 @@
   .curious-text {
     font-size: 1.5rem;
     font-style: italic;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
     color: var(--curious-text-color);
     font-weight: bold;
   }
@@ -97,11 +97,12 @@
       border-radius: 0.625rem;
       background-color: var(--tool-item-bg);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border: var(--tool-item-border);
     }
 
     .tool-name {
       margin-bottom: 2rem;
-      color: color.adjust($primary-color, $lightness: -40%);
+      color: var(--tool-name-color);
       font-size: 1.3rem;
       font-family: monospace;
     }
@@ -129,14 +130,15 @@
     margin: 0 auto;
 
     .copyright-text {
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      margin-bottom: 2.2rem;
       color: var(--copyright-text);
+      text-align: center;
     }
 
     .footer-items {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     .footer-item {

@@ -35,10 +35,10 @@ function toggleTheme() {
 
     if (isLightTheme) {
       body.classList.replace('light', 'dark');
-      toggleButton.textContent = 'Light Theme';
+      toggleButton.textContent = 'Light';
     } else {
       body.classList.replace('dark', 'light');
-      toggleButton.textContent = 'Dark Theme';
+      toggleButton.textContent = 'Dark';
     }
   });
 }
